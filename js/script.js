@@ -42,7 +42,8 @@ function printQuote(){
 }
 
 //printQuote(quotes);
-
+//a random initial quote is populated to the page
+printQuote();
 
 //note to self: The () causes the function to be executed immediately and 
 //the return result is passed to addEventListener(). That is not what you want. 
