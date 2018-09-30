@@ -55,6 +55,9 @@ function printQuote(){
 //a random initial quote is populated to the page
 printQuote();
 
+//a new quote is printed every 15 seconds
+setInterval(printQuote, 15000);
+
 // This event listener will respond to "Show another quote" button clicks
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
