@@ -25,9 +25,15 @@ function getRandomQuote(array) {
 // Create the printQuote funtion and name it printQuote
 function printQuote(){
 	var quoteObj = getRandomQuote(quotes);
-	var quote = quoteObj.quote;
+	//var quote = quoteObj.quote;
 	var string = "";
-	string = '<p class="quote"> ' + quote + '</p>';
+	string = '<p class="quote"> ' + quoteObj.quote + '</p>';
+	string += '<p class="source">' + quoteObj.source;
+	if(quoteObj.hasOwnProperty('citation')) {
+		string += '<span class="citation">' + quoteObj.citation + '</span>';
+	} if(quoteObj.hasOwnProperty('year')) {
+		string += '<span class="year">' + quoteObj.year + '</span>';
+	} string += '</p>';
 	document.getElementById('quote-box').innerHTML = string;
 
 	// var quoteText = quoteObj.quote;

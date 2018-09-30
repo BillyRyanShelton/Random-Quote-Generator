@@ -1,8 +1,8 @@
 /* Random Quote Generator Styles */
 
 body {
-  background-color: #36b55c;
-  color: white;
+  background-color: #000;
+  color: #07ef00;
   font-family: 'Playfair Display', serif;
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 .quote {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1.1;
   position: relative;
@@ -24,7 +24,7 @@ body {
 }
 
 .quote:before, .quote:after {
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 2.5rem;
   position: absolute;
 }
@@ -74,11 +74,11 @@ body {
   display: inline-block;
   left: 50%;
   margin-left: -6em;
-  bottom: 150px;
+  bottom: 100px;
   border-radius: 4px;
   border: 2px solid #fff;
-  color: #fff;
-  background-color: #36b55c;
+  color: ##07ef00;
+  background-color: #000;
   padding: 15px 0;
   transition: .5s ;
 }
