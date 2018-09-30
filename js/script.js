@@ -12,9 +12,22 @@ var quotes = [{quote:"Adapt what is useful, reject what is useless, and add what
 " unsuccessful men with talent.  Genius will not; unrewarded genius almost a proverb.  Education will not;"  +
 " The world is full of educated derelicts.  Persistance and determination alone are omnipotent.", source: "unknown"},
 {quote:"Never tell me the odds.", source: "Han Solo", citation: "Star Wars", year: "1977"},
-{quote:"Just because someone stumbles and loses their path, doesn't mean they're lost forever. Sometimes, we all need a little help.", source: "Professor X", citation: "X-Men: Days of Future Past", year:"2014"}
+{quote:"Just because someone stumbles and loses their path, doesn't mean they're lost forever. Sometimes, we all need a little help.", source: "Professor X", citation: "X-Men: Days of Future Past", year:"2014"},
+{quote:"Don’t ever let somebody tell you you can’t do something, not even me. Alright? You dream, you gotta protect it. People can’t do something themselves, they wanna tell you you can't do it.  If you want something, go get it.  Period.", source: "Chris Gardner", citation: "The Pursuit of Happiness", year:"2006"},
+{quote:"All we have to decide is what to do with the time that is given to us.", source: "Gandalf", citation: "Lord of the Rings: The Fellowship of the Ring", year:"2001"},
+{quote:"Nobody is gonna hit as hard as life, but it ain't about how hard you can hit.  It's how hard can you get hit and keep moving forward.  It's how much can you take, and keep moving forward.  That's how winning is done.", source: "Rocky", citation: "Rocky Balboa", year:"2006"},
+{quote:"In this life time, you don't have to prove nothing to nobody, except yourself.  And after what you've been through, if you haven't done that by now, it ain't gonna never happen.", source: "Fortune", citation: "Rudy", year:"1993"},
+{quote:"Oh yes, the past can hurt.  But you can either run from it, or learn from it.", source: "Rafiki", citation: "The Lion King", year:"1994"},
+{quote:"The only thing standing between you and your goal is the bullshit story you keep telling yourself as to why you can't achieve it.", source: "Jordan Belfort", citation: "The Wolf of Wall Stree", year:"2013"},
+{quote:"I've missed more than 9000 shots in my career.  I've lost almost 300 games.  26 times I've been trusted to take the game winning shot and missed.  I've failed over and over and over again in my life.  And that is why I succeed.", source: "Michael Jordan"},
+{quote:"Twenty year from now you will be more disappointed by the things that you didn't do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails.  Explore, Dream, Discover.", source: "Mark Twain"},
+{quote:"It does not matter how slowly you go as long as you do not stop.", source: "Confucius"},
+{quote:"The only way to do great work is to love what you do.", source: "Steve Jobs"},
+{quote:"In my walks, every man I meet is my superior in some way, and in that I learn from him.", source: "Ralph Waldo Emerson"},
+{quote:"Big things have small beginnings.", source: "David", citation: "Prometheus", year:"2012"},
+{quote:"Don't count the days, make the days count.", source: "", citation: "", year:""},
+//{quote:"", source: "", citation: "", year:""}
 ];
-
 
 // Create the getRandomQuote function and name it getRandomQuote
 function getRandomQuote(array) {
@@ -35,24 +48,11 @@ function printQuote(){
 		string += '<span class="year">' + quoteObj.year + '</span>';
 	} string += '</p>';
 	document.getElementById('quote-box').innerHTML = string;
-
-	// var quoteText = quoteObj.quote;
-	// var quoteAuthor = quoteObj.source;
-	// if(quoteObj.hasOwnProperty('citation'){
-	// 	var quoteCitation = quoteObj.citation;
-	// } else { var quoteCitation = '';}
-	// if(quoteObj.hasOwnProperty('year'){
-	// 	var quoteYear = quoteObj.year;
-	// } else {var quoteYear = '';}
-	
 }
 
-//printQuote(quotes);
 //a random initial quote is populated to the page
 printQuote();
 
-//note to self: The () causes the function to be executed immediately and 
-//the return result is passed to addEventListener(). That is not what you want. 
 // This event listener will respond to "Show another quote" button clicks
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
