@@ -8,7 +8,7 @@ body {
 
 #quote-box {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 10%;
   right: 10%;
   width: 80%;
@@ -16,7 +16,7 @@ body {
 }
 
 .quote {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.1;
   position: relative;
@@ -24,14 +24,14 @@ body {
 }
 
 .quote:before, .quote:after {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 2.5rem;
   position: absolute;
 }
 
 .quote:before {
   content: "“";
-  top: .25em;
+  top: .15em;
   left: -.5em;
 }
 
@@ -83,7 +83,8 @@ body {
   transition: .5s ;
 }
 #loadQuote:hover {
-  background-color: rgba(255,255,255,.25);
+  background-color: rgba(255,255,255,.1);
+  border: 1px solid #fff;
 }
 
 #loadQuote:focus {

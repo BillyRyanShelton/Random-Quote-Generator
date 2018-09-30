@@ -25,7 +25,7 @@ var quotes = [{quote:"Adapt what is useful, reject what is useless, and add what
 {quote:"The only way to do great work is to love what you do.", source: "Steve Jobs"},
 {quote:"In my walks, every man I meet is my superior in some way, and in that I learn from him.", source: "Ralph Waldo Emerson"},
 {quote:"Big things have small beginnings.", source: "David", citation: "Prometheus", year:"2012"},
-{quote:"Don't count the days, make the days count.", source: "", citation: "", year:""},
+{quote:"Don't count the days, make the days count.", source: "Muhammad Ali"},
 //{quote:"", source: "", citation: "", year:""}
 ];
 
