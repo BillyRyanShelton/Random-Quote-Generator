@@ -1,6 +1,6 @@
 // FSJS - Random Quote Generator
 
-// Create the array of quote objects and name it quotes
+//array of quote objects -quote, source, optional citation, optional year
 var quotes = [{quote:"Adapt what is useful, reject what is useless, and add what is specifically your own.", source: "Bruce Lee"}, 
 {quote:"For me life is continuously being hungry. The meaning of life is not simply to exist, to survive, but to move ahead, to go up, to achieve, to conquer.", source: "Arnold Schwarzenegger"},
 {quote:"A man can change his stars. I won't spend the rest of my life as nothing.", source: "Heath Ledger", citation: "A Knight's Tale", year: "2001"},
@@ -29,24 +29,26 @@ var quotes = [{quote:"Adapt what is useful, reject what is useless, and add what
 //{quote:"", source: "", citation: "", year:""}
 ];
 
-// Create the getRandomQuote function and name it getRandomQuote
+//random quote object generator
 function getRandomQuote(array) {
 	return array[Math.floor(Math.random()*array.length)]
 }
 
-
-// Create the printQuote funtion and name it printQuote
 function printQuote(){
+	//random quote obj is stored in a variable
 	var quoteObj = getRandomQuote(quotes);
-	//var quote = quoteObj.quote;
+	//a string is created to store the html text 
 	var string = "";
+	//the quote and source are concatenated to the string
 	string = '<p class="quote"> ' + quoteObj.quote + '</p>';
 	string += '<p class="source">' + quoteObj.source;
+	//if available the citation and year are concatenated to the string
 	if(quoteObj.hasOwnProperty('citation')) {
 		string += '<span class="citation">' + quoteObj.citation + '</span>';
 	} if(quoteObj.hasOwnProperty('year')) {
 		string += '<span class="year">' + quoteObj.year + '</span>';
 	} string += '</p>';
+	//the string is sent to the id quote box to be printed 
 	document.getElementById('quote-box').innerHTML = string;
 }
 
