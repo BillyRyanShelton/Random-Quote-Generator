@@ -9,11 +9,11 @@ var quotes = [{quote:"Adapt what is useful, reject what is useless, and add what
 {quote:"Do, or do not. There is no 'try'.", source: "Master Yoda", citation: "The Empire Strikes Back", year: "1980"},
 {quote:"The problem is not the problem.  The problem is your attitude about the problem.", source: "Captain Jack Sparrow", citation: "Pirates of the Caribbean:  The Curse of the Black Pearl", year:"2003"},
 {quote:"Nothing in the world can take the place of persistance.  Talent will not; Nothing is more common than" +
-" unsuccessful men with talent.  Genius will not; unrewarded genius almost a proverb.  Education will not;"  +
+" unsuccessful men with talent.  Genius will not; unrewarded genius is almost a proverb.  Education will not;"  +
 " The world is full of educated derelicts.  Persistance and determination alone are omnipotent.", source: "unknown"},
 {quote:"Never tell me the odds.", source: "Han Solo", citation: "Star Wars", year: "1977"},
 {quote:"Just because someone stumbles and loses their path, doesn't mean they're lost forever. Sometimes, we all need a little help.", source: "Professor X", citation: "X-Men: Days of Future Past", year:"2014"},
-{quote:"Don’t ever let somebody tell you you can’t do something, not even me. Alright? You dream, you gotta protect it. People can’t do something themselves, they wanna tell you you can't do it.  If you want something, go get it.  Period.", source: "Chris Gardner", citation: "The Pursuit of Happiness", year:"2006"},
+{quote:"Don’t ever let somebody tell you you can’t do something, not even me. Alright? You got a dream, you gotta protect it. People can’t do something themselves, they wanna tell you you can't do it.  If you want something, go get it.  Period.", source: "Chris Gardner", citation: "The Pursuit of Happiness", year:"2006"},
 {quote:"All we have to decide is what to do with the time that is given to us.", source: "Gandalf", citation: "Lord of the Rings: The Fellowship of the Ring", year:"2001"},
 {quote:"Nobody is gonna hit as hard as life, but it ain't about how hard you can hit.  It's how hard can you get hit and keep moving forward.  It's how much can you take, and keep moving forward.  That's how winning is done.", source: "Rocky", citation: "Rocky Balboa", year:"2006"},
 {quote:"In this life time, you don't have to prove nothing to nobody, except yourself.  And after what you've been through, if you haven't done that by now, it ain't gonna never happen.", source: "Fortune", citation: "Rudy", year:"1993"},
@@ -55,10 +55,18 @@ function printQuote(){
 //a random initial quote is populated to the page
 printQuote();
 
-//a new quote is printed every 15 seconds
-setInterval(printQuote, 15000);
+//a random quote is printed every 15 seconds 
+var quoteTimer = setInterval(printQuote, 15000);
 
-// This event listener will respond to "Show another quote" button clicks
-// when user clicks anywhere on the button, the "printQuote" function is called
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+//This event listener will respond to "Motivate!" button clicks
+//when user clicks anywhere on the button, the "printQuote" function is called
+document.getElementById('loadQuote').addEventListener("click", printQuote, false)
+
+//When the button is clicked the timer is reset to 15seconds
+document.getElementById('loadQuote').onclick = function() { 
+  clearInterval(quoteTimer); 
+  quoteTimer = setInterval(printQuote, 15000);
+};
+
+
 
