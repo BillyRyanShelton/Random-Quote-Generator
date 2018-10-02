@@ -20,7 +20,7 @@ var quotes = [{quote:"Adapt what is useful, reject what is useless, and add what
 {quote:"Oh yes, the past can hurt.  But you can either run from it, or learn from it.", source: "Rafiki", citation: "The Lion King", year:"1994"},
 {quote:"The only thing standing between you and your goal is the bullshit story you keep telling yourself as to why you can't achieve it.", source: "Jordan Belfort", citation: "The Wolf of Wall Stree", year:"2013"},
 {quote:"I've missed more than 9000 shots in my career.  I've lost almost 300 games.  26 times I've been trusted to take the game winning shot and missed.  I've failed over and over and over again in my life.  And that is why I succeed.", source: "Michael Jordan"},
-{quote:"Twenty year from now you will be more disappointed by the things that you didn't do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails.  Explore, Dream, Discover.", source: "Mark Twain"},
+{quote:"Twenty years from now you will be more disappointed by the things that you didn't do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails.  Explore, Dream, Discover.", source: "Mark Twain"},
 {quote:"It does not matter how slowly you go as long as you do not stop.", source: "Confucius"},
 {quote:"The only way to do great work is to love what you do.", source: "Steve Jobs"},
 {quote:"In my walks, every man I meet is my superior in some way, and in that I learn from him.", source: "Ralph Waldo Emerson"},
