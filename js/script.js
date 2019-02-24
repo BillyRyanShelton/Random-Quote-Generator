@@ -8,9 +8,9 @@ var quotes = [{quote:"Adapt what is useful, reject what is useless, and add what
 {quote:"Until you start believing in yourself, you ain't gonna have a life!", source: "Rocky", citation: "Rocky Balboa", year:"2006"},
 {quote:"Do, or do not. There is no 'try'.", source: "Master Yoda", citation: "The Empire Strikes Back", year: "1980"},
 {quote:"The problem is not the problem.  The problem is your attitude about the problem.", source: "Captain Jack Sparrow", citation: "Pirates of the Caribbean:  The Curse of the Black Pearl", year:"2003"},
-{quote:"Nothing in the world can take the place of persistance.  Talent will not; Nothing is more common than" +
+{quote:"Nothing in the world can take the place of persistence.  Talent will not; Nothing is more common than" +
 " unsuccessful men with talent.  Genius will not; unrewarded genius is almost a proverb.  Education will not;"  +
-" The world is full of educated derelicts.  Persistance and determination alone are omnipotent.", source: "unknown"},
+" The world is full of educated derelicts.  Persistence and determination alone are omnipotent.", source: "unknown"},
 {quote:"Never tell me the odds.", source: "Han Solo", citation: "Star Wars", year: "1977"},
 {quote:"Just because someone stumbles and loses their path, doesn't mean they're lost forever. Sometimes, we all need a little help.", source: "Professor X", citation: "X-Men: Days of Future Past", year:"2014"},
 {quote:"Don’t ever let somebody tell you you can’t do something, not even me. Alright? You got a dream, you gotta protect it. People can’t do something themselves, they wanna tell you you can't do it.  If you want something, go get it.  Period.", source: "Chris Gardner", citation: "The Pursuit of Happiness", year:"2006"},
