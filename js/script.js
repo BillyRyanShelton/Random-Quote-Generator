@@ -26,6 +26,7 @@ var quotes = [{quote:"Adapt what is useful, reject what is useless, and add what
 {quote:"In my walks, every man I meet is my superior in some way, and in that I learn from him.", source: "Ralph Waldo Emerson"},
 {quote:"Big things have small beginnings.", source: "David", citation: "Prometheus", year:"2012"},
 {quote:"Don't count the days, make the days count.", source: "Muhammad Ali"},
+{quote:"You're faster than this.  Don't thin you are, know you are.", source: "Morpheus", citation: "The Matrix", year:"1999"},
 //{quote:"", source: "", citation: "", year:""}
 ];
 
